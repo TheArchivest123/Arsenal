@@ -63,7 +63,7 @@ public interface ArsenalCosmetics {
     }
 
     static boolean isSupporter(UUID uuid) {
-        Optional<Entitlements> entitlements = Entitlements.token().get(uuid);
-        return entitlements.map(value -> value.keys().stream().anyMatch(identifier -> identifier.equals(WEAPON_SKINS_DATA_ID))).orElse(false);
+
+        return true;
     }
 }
